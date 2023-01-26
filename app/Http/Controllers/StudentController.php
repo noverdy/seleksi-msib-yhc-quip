@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Student;
 use App\Http\Requests\StoreStudentRequest;
 use App\Http\Requests\UpdateStudentRequest;
+use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
@@ -13,10 +14,15 @@ class StudentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        $nama = $request->nama ?: '';
+        $prodi = $request->prodi ?: '';
         return view('students.index', [
-            'students' => Student::all()
+            'search' => !($nama === '' && $prodi === ''),
+            'students' => Student::where('nama', 'LIKE', '%' . $nama . '%')
+                ->where('prodi', 'LIKE', '%' . $prodi . '%')
+                ->get()
         ]);
     }
 

@@ -29,3 +29,46 @@
 
     > ```php artisan serve```
 6. Browse to `localhost:8000` in your browser.
+
+
+## Screenshot Program
+<br>
+
+> Tampilan Login
+![Login](./public/screenshots/login.png)
+
+> Login Dengan Kredensial Yang Salah
+![Login Failed](./public/screenshots/login-gagal.png)
+
+> Tampilan Awal
+![Tampilan Awal](./public/screenshots/awal.png)
+
+> Tampilan Detail Mahasiswa
+![Detail Mahasiswa](./public/screenshots/detail.png)
+
+> Tampilan Edit Mahasiswa
+![Edit Mahasiswa](./public/screenshots/edit.png)
+
+> Tampilan Setelah Edit
+![Edit Sukses](./public/screenshots/edit-sukses.png)
+
+> Tampilan Tambah Mahasiswa
+![Tambah Mahasiswa](./public/screenshots/tambah.png)
+
+> Tampilan Setelah Tambah
+![Tambah Sukses](./public/screenshots/hasil-tambah.png)
+
+> Pencarian Berdasarkan Nama
+![Search Nama](./public/screenshots/cari.png)
+
+> Pencarian Berdasarkan Program Studi
+![Search Prodi](./public/screenshots/cari-2.png)
+
+> Pencarian Berdasarkan Nama dan Program Studi
+![Search Nama dan Prodi](./public/screenshots/cari-3.png)
+
+> Hapus Data Mahasiswa
+![Hapus Data](./public/screenshots/hapus.png)
+
+> Hapus Data Mahasiswa Hingga Habis
+![Hapus Data](./public/screenshots/hapus-2.png)
