@@ -27,7 +27,7 @@
                 </button>
             </div>
         </form>
-        <table class="table table-striped">
+        <table class="table table-striped" id="table">
             <thead>
                 <tr>
                     <th scope="col">No.</th>
@@ -67,4 +67,12 @@
             </tbody>
         </table>
     </div>
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('dist/jstable.css') }}">
+    <script type="text/javascript" src="{{ asset('/dist/jstable.min.js') }}"></script>
+    <script>
+        const table = new JSTable('#table', {
+            searchable: false,
+        })
+    </script>
 </x-template>
