@@ -29,6 +29,8 @@
 
     > ```php artisan serve```
 6. Browse to `localhost:8000` in your browser.
+7. (OPTIONAL) Run this command to seed the database with fake data.
+    > ```php artisan db:seed```
 
 
 ## Screenshot Program

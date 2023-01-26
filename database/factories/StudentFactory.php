@@ -17,7 +17,12 @@ class StudentFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'nama' => fake()->name(),
+            'nim' => fake()->numerify('################'),
+            'prodi' => fake()->jobTitle(),
+            'semester' => fake()->randomDigit(),
+            'kelas' => strtoupper(fake()->lexify('???-?')),
+            'tahun_angkatan' => fake()->year(),
         ];
     }
 }
